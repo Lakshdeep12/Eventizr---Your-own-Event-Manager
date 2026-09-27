@@ -7,9 +7,13 @@ node_modules/
 .env.*
 **/.env
 **/.env.*
+!.env.example
+!**/.env.example
 server/.env
 server/.env.*
+!server/.env.example
 client/.env
+!client/.env.example
 
 # Local runtime data
 server/.mongodb-data/
