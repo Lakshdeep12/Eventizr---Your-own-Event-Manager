@@ -1,0 +1,40 @@
+{
+  "name": "eventizr-server",
+  "version": "1.0.0",
+  "description": "A MERN stack-based full-stack event management platform that allows users to create, manage, discover, and organize events through an intuitive web interface.",
+  "keywords": [
+    "Event",
+    "Mangement"
+  ],
+  "homepage": "https://github.com/Lakshdeep12/Eventizr---Your-own-Event-Manager#readme",
+  "bugs": {
+    "url": "https://github.com/Lakshdeep12/Eventizr---Your-own-Event-Manager/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lakshdeep12/Eventizr---Your-own-Event-Manager.git"
+  },
+  "license": "ISC",
+  "author": "Lakshdeep Singh",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "seed": "node seed.js",
+    "check": "node --check index.js && node --check controllers/authController.js && node --check controllers/bookingController.js",
+    "test": "npm run check"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.10.2",
+    "nodemailer": "^10.0.10"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

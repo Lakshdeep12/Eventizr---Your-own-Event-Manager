@@ -1,7 +1,6 @@
 # Dependencies
 node_modules/
-client/node_modules/
-server/node_modules/
+**/node_modules/
 
 # Environment files
 .env
@@ -9,12 +8,22 @@ server/node_modules/
 **/.env
 **/.env.*
 server/.env
+server/.env.*
 client/.env
 
-# Build artifacts
+# Local runtime data
+server/.mongodb-data/
+server/data/
+server/uploads/
+
+# Build outputs
 build/
 dist/
 coverage/
+client/dist/
+
+# Logs
+*.log
 
 # Editor/system files
 .vscode/
